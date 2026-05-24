@@ -1,0 +1,94 @@
+* {
+  font-family: "Acme", sans-serif;
+}
+
+body{
+    background-color: #281711;
+    overflow: hidden;
+}
+
+.Navbar{
+    top: 70px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);   
+    border-radius: 20px;
+    padding: 10px;   
+    background: rgba(255, 255, 255, 0.015)
+}
+
+.Navbar a{
+    color: #8A5F41;
+    text-decoration: none;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.Navbar a:hover{
+    color: #ff9c3a;
+}
+
+.Coffee{
+    color: #8A5F41;
+    text-decoration: none;
+    font-size: 35px; 
+    position: fixed;
+    left: 20px;
+}
+
+.Me{
+    position: fixed;
+    left: -110px;
+    bottom: -175px;
+    width: 400px;
+}
+
+.About{
+    position: absolute;
+    top: 175px;
+    left: 230px;
+    width: 750px;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.015);
+    color: #A77F60;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.564);
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup 1.5s ease forwards;
+}
+
+.Title{
+    color: #725037;
+    font-size: 44px;
+}
+
+a{
+    color: #deae88;
+    text-align: end;
+    text-decoration: none;
+    display: block;
+    font-size: 23px;
+}
+
+.wiki{
+    position: absolute;
+    right: 125px;
+    animation: float 3s ease-in-out infinite;
+    width: 450px;
+    bottom: 160px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup 1.5s ease forwards;
+
+}
+
+@keyframes popup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

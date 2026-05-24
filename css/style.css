@@ -1,0 +1,102 @@
+* {
+  font-family: "Acme", sans-serif;
+}
+
+body{
+    background-color: #281711;
+    overflow: hidden;
+}
+
+.Cup{
+    position: absolute;
+    right: 175px;
+    height: 950px;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup 1.5s ease forwards;
+    top: 30px;
+    
+}
+
+@keyframes popup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.About{
+    position: absolute;
+    top: 285px;
+    left: 250px;
+    width: 650px;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.015);
+    color: #A77F60;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.564);
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup 1.5s ease forwards;
+}
+
+.About h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.About h3{
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #F3E4C9;
+}
+
+.Navbar{
+    top: 70px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);   
+    border-radius: 20px;
+    padding: 10px;   
+    background: rgba(255, 255, 255, 0.015)
+}
+
+.Navbar a{
+    color: #8A5F41;
+    text-decoration: none;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.Navbar a:hover{
+    color: #ff9c3a;
+}
+
+.Coffee{
+    color: #8A5F41;
+    text-decoration: none;
+    font-size: 35px; 
+    position: fixed;
+    left: 20px;
+}
+
+.Me{
+    position: fixed;
+    left: -110px;
+    bottom: -175px;
+    width: 400px;
+}
+
+.Contact{
+    text-decoration: none;
+    color: #8A5F41;
+    display: block;
+    bottom: 4px;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+}

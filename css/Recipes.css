@@ -1,0 +1,104 @@
+    
+* {
+  font-family: "Acme", sans-serif;
+}
+
+body{
+    background-color: #281711;
+
+}
+
+.Navbar{
+    top: 70px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);   
+    border-radius: 20px;
+    padding: 10px;   
+    background: rgba(255, 255, 255, 0.015)
+}
+
+.Navbar a{
+    color: #8A5F41;
+    text-decoration: none;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.Navbar a:hover{
+    color: #ff9c3a;
+}
+
+.Coffee{
+    color: #8A5F41;
+    text-decoration: none;
+    font-size: 35px; 
+    position: fixed;
+    left: 20px;
+}
+
+.Me{
+    position: fixed;
+    left: -110px;
+    bottom: -175px;
+    width: 400px;
+}
+
+header h1{
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup 1.5s ease forwards;
+    text-align: center;
+    font-size: 60px;
+    color: #8A5F41;
+}
+
+.Recipes{
+    width: 450px;
+    overflow:hidden ;
+    box-shadow: 0 0 30px (rgba(0,0,0,0.3));
+    border-radius: 30px;
+    background:#44281d82;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: popup 1.5s ease forwards;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.564);
+}
+
+.Recipes img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.Recipes .Title{
+    color: #8A5F41;
+    padding-left: 10px;
+}
+
+.Recipes .About{
+    color: #9c806d84;
+    padding: 10px;
+}
+
+.Recipes .Recipe-of-coffee{
+    color: #bb8157;
+    padding: 10px;
+}
+
+main{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+
+@keyframes popup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
